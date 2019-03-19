@@ -1,6 +1,7 @@
 import React from 'react';
 import List from './List.js';
 import Stage from './Stage.js';
+import Chatlog from './Chatlog.js';
 import './App.css';
 
 function App(props){
@@ -13,6 +14,9 @@ function App(props){
       </div>
       <div className="Participant-Stage">
         <Stage stage={stageParticipants} />
+      </div>
+      <div className="Chatlog-container">
+        <Chatlog events={props.log}/>
       </div>
     </main>
   )
