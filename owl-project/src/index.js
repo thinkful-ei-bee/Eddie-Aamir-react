@@ -7,7 +7,4 @@ import './Participant.css';
 import './App.css';
 import participants from './participants.js';
 
-
-ReactDOM.render(<App participants={participants}/>, document.getElementById('root'));
-
-
+ReactDOM.render(<App part={participants}/>, document.getElementById('root'));
