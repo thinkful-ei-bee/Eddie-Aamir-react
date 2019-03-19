@@ -2,7 +2,6 @@ import React from 'react';
 import List from './List.js';
 
 function App(props) {
-  console.log(props.store);
   let lists = props.store.lists.map(list => <List key={list.id} header={list.header} cards={list.cardIds.map(letter=>props.store.allCards[letter])}></List>)
   return (
     <main className='App'>
